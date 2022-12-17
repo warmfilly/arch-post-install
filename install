@@ -2,7 +2,7 @@
 
 INSTALL="sudo pacman -S --noconfirm"
 
-sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf # Enable the multilib repository in /etc/pacman.conf (steam is located in multilib)
+sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf # Enable the multilib repository in /etc/pacman.conf (steam is located in multilib)
 
 sudo pacman -Syu --noconfirm
 
