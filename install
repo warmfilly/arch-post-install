@@ -1,6 +1,9 @@
 #!/bin/bash
 
 INSTALL="sudo pacman -S --noconfirm"
+
+sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf # Enable the multilib repository in /etc/pacman.conf (steam is located in multilib)
+
 sudo pacman -Syu --noconfirm
 
 $INSTALL  base-devel
@@ -10,7 +13,6 @@ makepkg -si --noconfirm
 cd ~
 
 # Install Steam
-sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf # Enable the multilib repository in /etc/pacman.conf 
 $INSTALL steam
 
 $INSTALL virtualbox-host-modules-arch virtualbox
