@@ -2,9 +2,9 @@
 
 sudo pacman -Sy
 
-sudo pacman -S virtualbox-host-modules-arch virtualbox
+sudo pacman -Sy virtualbox-host-modules-arch virtualbox
 
-sudo pacman -S xorg sddm plasma-desktop
+sudo pacman -Sy xorg-server sddm plasma-desktop
 sudo systemctl enable sddm.service
 
 echo "Installation complete. Reboot when ready"
