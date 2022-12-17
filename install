@@ -3,7 +3,7 @@
 INSTALL="sudo pacman -S --noconfirm"
 sudo pacman -Syu --noconfirm
 
-sudo pacman -S --noconfirm base-devel
+$INSTALL  base-devel
 git clone https://aur.archlinux.org/yay-git.git
 cd yay-git
 makepkg -si --noconfirm
@@ -12,6 +12,7 @@ cd ~
 # Install Steam
 sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf # Enable the multilib repository in /etc/pacman.conf 
 $INSTALL steam
+
 $INSTALL virtualbox-host-modules-arch virtualbox
 
 sudo pacman -S --noconfirm alacritty vim 
