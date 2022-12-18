@@ -12,14 +12,9 @@ cd yay-git
 makepkg -si --noconfirm
 cd ~
 
-# Install Steam
-$INSTALL steam
+$INSTALL steam virtualbox-host-modules-arch virtualbox alacritty vim xorg-server sddm plasma-desktop bitwarden neofetch neochat qtox firefox ranger rsync go
+yay -S --noconfirm megasync vscodium-bin pyenv
 
-$INSTALL virtualbox-host-modules-arch virtualbox
-
-sudo pacman -S --noconfirm alacritty vim 
-
-sudo pacman -S --noconfirm xorg-server sddm plasma-desktop
 sudo systemctl enable sddm.service
 
 echo "Installation complete. Reboot when ready"
