@@ -1,0 +1,12 @@
+#!/bin/bash
+
+sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf # Enable the multilib repository in /etc/pacman.conf (steam is located in multilib)
+
+sudo pacman -Syu --noconfirm
+
+# Should I add nodejs?
+sudo pacman -S --noconfirm  steam virtualbox-host-modules-arch virtualbox alacritty vim \
+bitwarden neofetch neochat qtox firefox ranger rsync go tldr wine vlc mpv yt-dlp libappindicator-gtk3 gnome-shell-extension-appindicator thunar ntfs-3g
+
+
+echo "Installation complete. Reboot when ready"
