@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Install VsCodium extensions
+codium --install-extension webfreak.debug
+
+
+echo
+echo "Installation complete."

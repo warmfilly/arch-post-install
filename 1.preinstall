@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Install yay
+sudo pacman -S --noconfirm base-devel
+git clone https://aur.archlinux.org/yay-git.git
+cd yay-git
+makepkg -si --noconfirm
+cd ~
+
+# Enable the multilib repository
+sudo sed -i "/\[multilib\]/,/Include/"'s/^#//' /etc/pacman.conf
+
+echo
+echo "Yay installed and multilib repository enabled. Execute 2.install-packages now."
