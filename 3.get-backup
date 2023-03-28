@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Download the backup of the /home directory to the desktop."
+echo "Using Dolphin, drag the /home directory located on the desktop to the actual /home directory."
+echo "Write into any directories and overwrite any files."
