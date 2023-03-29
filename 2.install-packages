@@ -11,7 +11,7 @@ sudo pacman -S --noconfirm element-desktop
 sudo pacman -S --noconfirm git
 sudo pacman -S --noconfirm gnome-calculator
 sudo pacman -S --noconfirm gnome-clocks
-sudo pacman -S --noconfirm gnome-shell-extension-appindicator
+#sudo pacman -S --noconfirm gnome-shell-extension-appindicator
 sudo pacman -S --noconfirm gnome-terminal
 sudo pacman -S --noconfirm go
 sudo pacman -S --noconfirm jq
