@@ -1,69 +1,73 @@
 #!/bin/bash
 
+PACKAGES=(
+    'alacritty'
+    'also-utils'
+    'bitwarden'
+    'dolpin'
+    'element-desktop'
+    'firefox'
+    'gnome-calculator'
+    'gnome-clock'
+    'gnome-terminal'
+    'go'
+    'jq'
+    'keepassxc'
+    'kscreen'
+    'libappindicator-gtk3'
+    'lightdm'
+    'lightdm-gtk-greeter'
+    'neofetch'
+    'networkmanager'
+    'nomacs'
+    'ntfs-3g'
+    'nvidia'
+    'obs-studio'
+    'openvpn'
+    'picom'
+    'plasma-desktop'
+    'plasma-nm'
+    'plasma-pa'
+    'powerdevil'
+    'pulseaudio'
+    'qtox'
+    'ranger'
+    'rsync'
+    'steam'
+    'tldr'
+    'trilium'
+    'unzip'
+    'virtualbox'
+    'virtualbox-host-modules-arch'
+    'vlc'
+    'wine'
+    'xed'
+    'xorg'
+    'xfce4-taskmanager'
+    'zip'
+)
+
+AUR_PACKAGES=(
+    'mcstatus',
+    'megacmd'
+    'megasync'
+    'protonvpn'
+    'spotify'
+    'ultimmc-bin'
+    'vscodium-bin'
+)
+
 sudo pacman -Syu --noconfirm
 
-# Should I add nodejs?
-sudo pacman -S --noconfirm alacritty
-sudo pacman -S --noconfirm alsa-utils
-sudo pacman -S --noconfirm bitwarden
-sudo pacman -S --noconfirm dolphin
-sudo pacman -S --noconfirm element-desktop
-sudo pacman -S --noconfirm firefox
-sudo pacman -S --noconfirm git
-sudo pacman -S --noconfirm gnome-calculator
-sudo pacman -S --noconfirm gnome-clocks
-#sudo pacman -S --noconfirm gnome-shell-extension-appindicator
-sudo pacman -S --noconfirm gnome-terminal
-sudo pacman -S --noconfirm go
-sudo pacman -S --noconfirm jq
-sudo pacman -S --noconfirm keepassxc
-sudo pacman -S --noconfirm kscreen
-sudo pacman -S --noconfirm libappindicator-gtk3
-sudo pacman -S --noconfirm lightdm
-sudo pacman -S --noconfirm lightdm-gtk-greeter
-sudo pacman -S --noconfirm neofetch
-sudo pacman -S --noconfirm neovim
-sudo pacman -S --noconfirm networkmanager
-sudo pacman -S --noconfirm nomacs
-sudo pacman -S --noconfirm ntfs-3g
-sudo pacman -S --noconfirm nvidia
-sudo pacman -S --noconfirm obs-studio
-sudo pacman -S --noconfirm openvpn # Installed as dependency of protonvpn?
-sudo pacman -S --noconfirm picom
-sudo pacman -S --noconfirm plasma-desktop
-sudo pacman -S --noconfirm plasma-nm
-sudo pacman -S --noconfirm plasma-pa
-sudo pacman -S --noconfirm powerdevil
-sudo pacman -S --noconfirm pulseaudio
-sudo pacman -S --noconfirm qtox
-sudo pacman -S --noconfirm ranger
-sudo pacman -S --noconfirm rsync
-sudo pacman -S --noconfirm steam
-sudo pacman -S --noconfirm tldr
-sudo pacman -S --noconfirm trilium
-sudo pacman -S --noconfirm unzip
-sudo pacman -S --noconfirm virtualbox
-sudo pacman -S --noconfirm virtualbox-host-modules-arch
-sudo pacman -S --noconfirm vlc
-sudo pacman -S --noconfirm wine
-sudo pacman -S --noconfirm xed
-sudo pacman -S --noconfirm xorg
-sudo pacman -S --noconfirm xfce4-taskmanager
-sudo pacman -S --noconfirm zip
+for PKG in "${PACKAGES[@]}"; do
+    sudo pacman -S --noconfirm --needed "$PKG"
+done
 
-# sudo pacman -S --noconfirm 
-
-
-yay -S --noconfirm mcstatus
-yay -S --noconfirm megacmd
-yay -S --noconfirm megasync
-yay -S --noconfirm protonvpn
-yay -S --noconfirm spotify
-yay -S --noconfirm ultimmc-bin
-yay -S --noconfirm vscodium-bin
-# yay -S --noconfirm 
+for PKG in "${AUR_PACKAGES[@]}"; do
+    yay --noconfirm --needed "$PKG"
+done
 
 sudo systemctl enable lightdm
 
 echo
-echo "All packages installed. Reboot now. Then, execute 3.configure-tools."
+echo "All packages installed. Reboot now. Then execute step 3."
