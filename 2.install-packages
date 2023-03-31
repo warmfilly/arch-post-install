@@ -8,6 +8,7 @@ sudo pacman -S --noconfirm alsa-utils
 sudo pacman -S --noconfirm bitwarden
 sudo pacman -S --noconfirm dolphin
 sudo pacman -S --noconfirm element-desktop
+sudo pacman -S --noconfirm firefox
 sudo pacman -S --noconfirm git
 sudo pacman -S --noconfirm gnome-calculator
 sudo pacman -S --noconfirm gnome-clocks
