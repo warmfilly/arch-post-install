@@ -64,7 +64,7 @@ for PKG in "${PACKAGES[@]}"; do
 done
 
 for PKG in "${AUR_PACKAGES[@]}"; do
-    yay --noconfirm --needed "$PKG"
+    yay -S --noconfirm --needed "$PKG"
 done
 
 sudo systemctl enable lightdm
