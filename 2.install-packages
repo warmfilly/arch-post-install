@@ -48,7 +48,7 @@ PACKAGES=(
 )
 
 AUR_PACKAGES=(
-    'mcstatus',
+    'mcstatus'
     'megacmd'
     'megasync'
     'protonvpn'
