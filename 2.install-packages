@@ -2,7 +2,7 @@
 
 PACKAGES=(
     'alacritty'
-    'also-utils'
+    'alsa-utils'
     'bitwarden'
     'dolphin'
     'element-desktop'
