@@ -4,7 +4,7 @@ PACKAGES=(
     'alacritty'
     'also-utils'
     'bitwarden'
-    'dolpin'
+    'dolphin'
     'element-desktop'
     'firefox'
     'gnome-calculator'
