@@ -17,6 +17,7 @@ PACKAGES=(
     'libappindicator-gtk3'
     'lightdm'
     'lightdm-gtk-greeter'
+    'ncdu'
     'neofetch'
     'networkmanager'
     'nomacs'
