@@ -42,6 +42,7 @@ PACKAGES=(
     'virtualbox-host-modules-arch'
     'vlc'
     'wine'
+    "xclip"
     'xed'
     'xorg'
     'xfce4-taskmanager'
