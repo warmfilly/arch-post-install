@@ -42,6 +42,7 @@ PACKAGES=(
     'unzip'
     'virtualbox'
     'virtualbox-host-modules-arch'
+    'visual-studio-code-bin'
     'vlc'
     'wine'
     "xclip"
