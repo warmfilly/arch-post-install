@@ -55,6 +55,7 @@ AUR_PACKAGES=(
     'mcstatus'
     'megacmd'
     'megasync'
+    'nomacs'
     'protonvpn'
     'spotify'
     'trilium-bin'
