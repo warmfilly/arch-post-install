@@ -14,6 +14,7 @@ PACKAGES=(
     'go'
     'jq'
     'keepassxc'
+    'kmenuedit'
     'kscreen'
     'libappindicator-gtk3'
     'lightdm'
