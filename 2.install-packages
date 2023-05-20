@@ -22,7 +22,6 @@ PACKAGES=(
     'neofetch'
     'neovim'
     'networkmanager'
-    'nomacs'
     'ntfs-3g'
     'nvidia'
     'obs-studio'
