@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# kmenuedit, vscode
+# nomacs aur
+
 PACKAGES=(
     'alacritty'
     'alsa-utils'
@@ -57,7 +60,7 @@ AUR_PACKAGES=(
     'megacmd'
     'megasync'
     'nomacs'
-    'protonvpn'
+    'mullvad-vpn'
     'spotify'
     'trilium-bin'
     'ultimmc-bin'
@@ -76,6 +79,7 @@ for PKG in "${AUR_PACKAGES[@]}"; do
 done
 
 sudo systemctl enable lightdm
+sudo systemctl enable mullvad-daemon.service
 
 echo
 echo "All packages installed. Reboot now. Then execute step 3."
