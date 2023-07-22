@@ -45,7 +45,6 @@ PACKAGES=(
     'unzip'
     'virtualbox-host-modules-arch'
     'virtualbox'
-    'visual-studio-code-bin'
     'vlc'
     'wine'
     'xclip'
@@ -67,7 +66,6 @@ AUR_PACKAGES=(
     'trilium-bin'
     'ultimmc-bin'
     'visual-studio-code-bin'
-    'vscodium-bin'
 )
 
 sudo pacman -Syu --noconfirm
