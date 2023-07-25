@@ -12,6 +12,7 @@ PACKAGES=(
     'element-desktop'
     'firefox'
     'gdb'
+    'git-lfs'
     'gnome-calculator'
     'gnome-clock'
     'gnome-terminal'
